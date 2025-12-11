@@ -7,5 +7,4 @@ def codigoValido(codigo):
     for color in codigo:
         if color not in colorPermitido:
             return False
-    
     return True
