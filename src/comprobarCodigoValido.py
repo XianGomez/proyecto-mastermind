@@ -1,4 +1,4 @@
-colorPermitido = {"RED", "GREEN", "BLUE", "YELLOW"}
+colorPermitido = ["RED", "GREEN", "BLUE", "YELLOW"]
 
 def codigoValido(codigo):
     if len(codigo) != 4:
