@@ -3,21 +3,25 @@ import random
 fichas = ["RED", "BLUE", "YELLOW", "GREEN"]
 codigo = []
 
-def generarCodigoAutomatico(codigo, fichas):
-    for _ in range(4):
-        codigo.append(random.choice(fichas) )
-        
+def generarCodigoAutomatico(codigo, fichas, n=4):
+    if n > 4:
+        raise ValueError("El número de fichas no puede ser mayor a 4")
+    for _ in range(n):
+        codigo.append(random.choice(fichas))
+
     print("Código: ", codigo)
     return codigo
 
-def generarCodigoManual(codigo):
-    for i in range(4):
+def generarCodigoManual(codigo, n=4):
+    if n > 4:
+        raise ValueError("El número de fichas no puede ser mayor a 4")
+    for i in range(n):
         ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN): ").upper()
         while ficha not in fichas:
             print("Color no válido. Inténtalo de nuevo.")
             ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN): ").upper()
         codigo.append(ficha)
-        
+
     print("Código: ", codigo)
     return codigo
 
@@ -30,5 +34,12 @@ def elegirMetodoGeneracion():
     else:
         print("Opción no válida.")
 
-elegirMetodoGeneracion()
+
+if __name__ == "__main__":
+   
+    test_codigo = []
+    resultado = generarCodigoAutomatico(test_codigo, fichas)
+    assert len(resultado) == 4, "Código automático debe tener 4 fichas"
+
+
 
