@@ -5,7 +5,7 @@ def definirParametros():
 
     parametros['tamanhoPoblacion'] = 100
     parametros['maxGeneraciones'] = 14
-    parametros['OperadorSeleccion'] = random.choice(["rango", "ruleta", "torneo"])
-    parametros['LongitudCodigo'] = 4
+    parametros['operadorSeleccion'] = random.choice(["rango", "ruleta", "torneo"])
+    parametros['longitudCodigo'] = 4
 
     return parametros
