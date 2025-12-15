@@ -17,7 +17,7 @@ def crearPoblacionInicial(poblacionMaxima):
         
         poblacionInicial.append(nuevoIndividuo)
 
-    print(poblacionInicial)
+    return poblacionInicial
 
 
     
