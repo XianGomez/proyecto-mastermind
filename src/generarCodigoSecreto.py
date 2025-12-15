@@ -1,7 +1,7 @@
 import random
 from definirParametros import definirParametros
 
-fichas = ["RED", "BLUE", "YELLOW", "GREEN"]
+fichas = ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "PURPLE"]
 codigoObjetivo = []
 
 def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['longitudCodigo']):
@@ -17,10 +17,10 @@ def generarCodigoManual(codigoObjetivo, n=definirParametros()['longitudCodigo'])
     if n > 4:
         raise ValueError("El número de fichas no puede ser mayor a 4")
     for i in range(n):
-        ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN): ").upper()
+        ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN, ORANGE, PURPLE): ").upper()
         while ficha not in fichas:
             print("Color no válido. Inténtalo de nuevo.")
-            ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN): ").upper()
+            ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN, ORANGE, PURPLE): ").upper()
         codigoObjetivo.append(ficha)
 
     print("Código: ", codigoObjetivo)
