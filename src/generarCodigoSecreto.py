@@ -4,7 +4,7 @@ from definirParametros import definirParametros
 fichas = ["RED", "BLUE", "YELLOW", "GREEN"]
 codigoObjetivo = []
 
-def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['LongitudCodigo']):
+def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['longitudCodigo']):
     if n > 4:
         raise ValueError("El número de fichas no puede ser mayor a 4")
     for _ in range(n):
@@ -13,7 +13,7 @@ def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['Longi
     print("Código: ", codigoObjetivo)
     return codigoObjetivo
 
-def generarCodigoManual(codigoObjetivo, n=definirParametros()['LongitudCodigo']):
+def generarCodigoManual(codigoObjetivo, n=definirParametros()['longitudCodigo']):
     if n > 4:
         raise ValueError("El número de fichas no puede ser mayor a 4")
     for i in range(n):
