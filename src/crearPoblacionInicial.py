@@ -2,7 +2,7 @@ import random
 from definirParametros import definirParametros
 
 
-fichas = ["RED", "BLUE", "YELLOW", "GREEN"]
+fichas = ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "PURPLE"]
 poblacionInicial = []
 
 def crearPoblacionInicial(poblacionMaxima):
@@ -17,7 +17,7 @@ def crearPoblacionInicial(poblacionMaxima):
         
         poblacionInicial.append(nuevoIndividuo)
 
-    return poblacionInicial
+    print(poblacionInicial)
 
 
     
