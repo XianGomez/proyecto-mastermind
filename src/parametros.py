@@ -1,0 +1,11 @@
+import random
+
+def parametros():
+
+    TAMANHOPOBLACION = 100
+    MAXGENERACIONES = 14
+    OPERADORSELECCION = random.choice(["rango", "ruleta", "torneo"])
+    LONGITUDCODIGO = 4
+    TASAMUTACION = 0.02
+
+    return TAMANHOPOBLACION, MAXGENERACIONES, OPERADORSELECCION, LONGITUDCODIGO, TASAMUTACION
