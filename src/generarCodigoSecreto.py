@@ -1,10 +1,11 @@
 import random
-from definirParametros import definirParametros
+import parametros
+tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion = parametros.parametros() 
 
 fichas = ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "PURPLE"]
 codigoObjetivo = []
 
-def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['longitudCodigo']):
+def generarCodigoAutomatico(codigoObjetivo, fichas, n=longitudCodigo):
     if n > 4:
         raise ValueError("El número de fichas no puede ser mayor a 4")
     for _ in range(n):
@@ -13,7 +14,7 @@ def generarCodigoAutomatico(codigoObjetivo, fichas, n=definirParametros()['longi
     print("Código: ", codigoObjetivo)
     return codigoObjetivo
 
-def generarCodigoManual(codigoObjetivo, n=definirParametros()['longitudCodigo']):
+def generarCodigoManual(codigoObjetivo, n=longitudCodigo):
     if n > 4:
         raise ValueError("El número de fichas no puede ser mayor a 4")
     for i in range(n):
