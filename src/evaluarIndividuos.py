@@ -12,6 +12,4 @@ def evaluarIndividuos(poblacionInicial, codigoObjetivo):
             1 for i in range(len(codigoObjetivo)) 
             if individuo[i] == codigoObjetivo[i])
         puntuaciones.append(aciertos)
-    print(puntuaciones)
-
-evaluarIndividuos(poblacionInicial=poblacionInicial, codigoObjetivo=codigoObjetivo)
+    return puntuaciones
