@@ -1,41 +1,17 @@
 import random
 import parametros
-tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion = parametros.parametros() 
+_, _, _, longitudCodigo, _ = parametros.parametros() 
 
 fichas = ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "PURPLE"]
-codigoObjetivo = []
 
-def generarCodigoAutomatico(codigoObjetivo, fichas, n=longitudCodigo):
-    if n > 4:
-        raise ValueError("El número de fichas no puede ser mayor a 4")
+
+def generarCodigoAutomatico(fichas, n=longitudCodigo):
+    codigoGenerado = [] 
+    if n > 4: 
+        raise ValueError("El número de fichas no puede ser mayor a la cantidad de colores disponibles")
+    
     for _ in range(n):
-        codigoObjetivo.append(random.choice(fichas))
+        codigoGenerado.append(random.choice(fichas))
 
-    print("Código: ", codigoObjetivo)
-    return codigoObjetivo
-
-def generarCodigoManual(codigoObjetivo, n=longitudCodigo):
-    if n > 4:
-        raise ValueError("El número de fichas no puede ser mayor a 4")
-    for i in range(n):
-        ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN, ORANGE, PURPLE): ").upper()
-        while ficha not in fichas:
-            print("Color no válido. Inténtalo de nuevo.")
-            ficha = input(f"Introduce el color de la ficha {i+1} (RED, BLUE, YELLOW, GREEN, ORANGE, PURPLE): ").upper()
-        codigoObjetivo.append(ficha)
-
-    print("Código: ", codigoObjetivo)
-    return codigoObjetivo
-
-def elegirMetodoGeneracion():
-    opcion = input("¿Quieres generar el código manualmente (M) o automáticamente (A)? ").upper()
-    if opcion == 'M':
-        generarCodigoManual(codigoObjetivo)
-    elif opcion == 'A':
-        generarCodigoAutomatico(codigoObjetivo, fichas)
-    else:
-        print("Opción no válida.")
-
-
-elegirMetodoGeneracion()
-
+    print("Código Secreto Generado: ", codigoGenerado)
+    return codigoGenerado
