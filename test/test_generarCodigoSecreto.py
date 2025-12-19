@@ -11,4 +11,4 @@ def test_generarCodigoAutomatico(monkeypatch):
 def test_generarCodigoAutomatico_error():
     codigoObjetivo = []
     with pytest.raises(ValueError):
-        generarCodigoAutomatico(codigoObjetivo, fichas, 5)
+        generarCodigoAutomatico(codigoObjetivo, fichas, 5) 
