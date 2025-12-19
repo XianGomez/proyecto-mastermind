@@ -8,4 +8,4 @@ def test_parametros():
     assert maxGeneraciones == 14
     assert operadorSeleccion in ["rango", "ruleta", "torneo"]
     assert longitudCodigo == 4
-    assert tasaMutacion == 0.02
+    assert tasaMutacion == 0.02 
