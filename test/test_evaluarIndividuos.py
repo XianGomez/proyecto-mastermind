@@ -13,3 +13,4 @@ def test_evaluarIndividuos():
     puntuaciones = evaluarIndividuos(poblacion, codigoObjetivo)
     
     assert puntuaciones == [4, 3, 3, 2]
+    
