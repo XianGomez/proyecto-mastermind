@@ -1,0 +1,19 @@
+import random
+from parametros import parametros
+tasaMutacion, tasaCruce = parametros()
+
+def reproduccion(padres, tasaMutacion, tasaCruce):
+    hijos = []
+    for i in range(0, len(padres), 2):
+        padre1 = padres[i]
+        padre2 = padres[i + 1] if i + 1 < len(padres) else padres[0]
+        if random.random() < tasaCruce:
+            puntoCruce = random.randint(1,len(padre1)-1)
+            hijo1 = padre1[:puntoCruce] + padre2[puntoCruce:]
+            hijo2 = padre2[:puntoCruce] + padre1[puntoCruce:]
+        else:
+            hijo1, hijo2= padre1, padre2
+
+        hijos.append(hijo1)
+        hijos.append(hijo2)
+        return hijos
