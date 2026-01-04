@@ -1,6 +1,6 @@
 import random
 import parametros 
-tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion = parametros.parametros()
+tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion, tasaCruce = parametros.parametros()
 
 fichas = ["RED", "BLUE", "YELLOW", "GREEN", "ORANGE", "PURPLE"]
 poblacionInicial = []
