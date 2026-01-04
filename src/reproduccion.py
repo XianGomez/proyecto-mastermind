@@ -1,6 +1,6 @@
 import random
 from parametros import parametros
-tasaMutacion, tasaCruce = parametros()
+tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion, tasaCruce = parametros()
 
 def reproduccion(padres, tasaMutacion, tasaCruce):
     hijos = []
