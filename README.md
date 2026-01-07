@@ -11,7 +11,6 @@
     - [**Instalación**](#instalación)
 - [**Metodología**](#metodología)
 - [**Descripción técnica**](#descripción-técnica)
-    - [**Requisitos funcionales/no funcionales, NOT LIST**](#not-list)
     - [**Historias de usuario**](#historias-de-usuario)
     - [**Arquitectura de la aplicación**](#arquitectura-de-la-aplicación)
 -  [**Diseño**](#diseño)
@@ -142,7 +141,7 @@ No se ha implementado ningún test de integración
 
 ## Justificación temporal
 
-La duración del proyecto ha sido de unas dos semanas y seis días. En las cuales los primeros días se utilizo para la comprensión del framework, además de estudiar como organizar el proyecto y los ultimos días para preparar la documentación y la defensa del proyecto. No sabiamos a ciencia cierta cuanto tiempo nos llevaría cada historia de usuario, por lo tanto, no se pudo estimar el tiempo exacto que tomaría el proyecto.  
+La duración del proyecto ha sido de unas tres semanas. En las cuales los primeros días se utilizo para la comprensión del proyecto en si, además de estudiar como organizar el proyecto.  
 
 # Uso de la IA
 
