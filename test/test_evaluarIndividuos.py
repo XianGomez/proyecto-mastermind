@@ -1,16 +1,12 @@
-import pytest
 from src.evaluarIndividuos import evaluarIndividuos
 
-def test_evaluarIndividuos():
-    codigoObjetivo = ["RED", "BLUE", "YELLOW", "GREEN"]
+
+def test_evaluar_individuos():
     poblacion = [
-        ["RED", "BLUE", "YELLOW", "GREEN"],  # 4 aciertos
-        ["RED", "BLUE", "YELLOW", "PURPLE"],  # 3 aciertos
-        ["RED", "BLUE", "ORANGE", "GREEN"],  # 3 aciertos
-        ["PURPLE", "ORANGE", "YELLOW", "GREEN"]  # 2 aciertos
+        ['RED', 'BLUE', 'GREEN', 'YELLOW'],
+        ['RED', 'RED', 'RED', 'RED']
     ]
-    
-    puntuaciones = evaluarIndividuos(poblacion, codigoObjetivo)
-    
-    assert puntuaciones == [4, 3, 3, 2]
-    
+    codigo = ['RED', 'BLUE', 'GREEN', 'PURPLE']
+
+    puntuaciones = evaluarIndividuos(poblacion, codigo)
+    assert puntuaciones == [3, 1]
