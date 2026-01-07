@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+
 from parametros import parametros
 from crearPoblacionInicial import crearPoblacionInicial
 from generarCodigoSecreto import generarCodigoAutomatico, fichas
@@ -29,4 +34,3 @@ for generacion in range(maxGeneraciones):
     poblacion = poblarGeneracion(hijos, tamanhoPoblacion)
 
 graficar_mastermind(historial_mejores, codigoObjetivo)
-
