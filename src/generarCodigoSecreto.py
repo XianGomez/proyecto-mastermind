@@ -11,5 +11,5 @@ def generarCodigoAutomatico(fichas, n=longitudCodigo):
     for _ in range(n):
         codigoGenerado.append(random.choice(fichas))
 
-    print("Código Secreto Generado: ", codigoGenerado)
+    
     return codigoGenerado
