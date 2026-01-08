@@ -68,7 +68,7 @@ La arquitectura que se ha utilizado para este proyecto es el de MVC más servici
 
 ## Diagrama de Componentes
 
-[![Diagrama de dependencias](images/venv.png)](images/venv.png)
+[![Diagrama de dependencias](images/diagrama.png)](images/venv.png)
 
 
 # Implementación
