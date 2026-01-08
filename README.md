@@ -51,9 +51,9 @@ Por último, hemos usado ***Scrum*** como marco de trabajo durante todo el proye
 # Descripción técnica
 
 ## Historias de usuario
-![Historia de usuario](assets/img-readme/usuario1.png)  
+![Historia de usuario](images/historia1.png)  
 
-![Historia de usuario](assets/img-readme/usuario2.png)
+![Historia de usuario](images/historia2.png)
 
 ## Arquitectura de la aplicación
 
