@@ -10,27 +10,31 @@ from evaluarIndividuos import evaluarIndividuos
 from seleccionarPadres import seleccionarPadres
 from reproduccion import reproduccion
 from poblarGeneracion import poblarGeneracion
-from visualizacion import graficar_mastermind 
+from visualizacion import graficarMastermind 
 
 tamanhoPoblacion, maxGeneraciones, operadorSeleccion, longitudCodigo, tasaMutacion, tasaCruce = parametros()
 codigoObjetivo = generarCodigoAutomatico(fichas, longitudCodigo)
 poblacion = crearPoblacionInicial()
 
-historial_mejores = [] 
+historialMejores = [] 
+encontrado = False
 
 for generacion in range(maxGeneraciones):
     puntuaciones = evaluarIndividuos(poblacion, codigoObjetivo)
     
-    mejor_puntuacion = max(puntuaciones)
-    mejor_individuo = poblacion[puntuaciones.index(mejor_puntuacion)]
-    historial_mejores.append(mejor_individuo)
+    mejorPuntuacion = max(puntuaciones)
+    mejorIndividuo = poblacion[puntuaciones.index(mejorPuntuacion)]
+    historialMejores.append(mejorIndividuo)
     
-    if mejor_puntuacion == longitudCodigo:
+    if mejorPuntuacion == longitudCodigo:
         print(f"¡Solución encontrada en Gen {generacion}!")
+        encontrado = True
         break
     
     padres = seleccionarPadres(poblacion, puntuaciones)
     hijos = reproduccion(padres, tasaMutacion, tasaCruce)
     poblacion = poblarGeneracion(hijos, tamanhoPoblacion)
+else:
+    print(f"Se ha llegado al máximo de generaciones ({maxGeneraciones}) sin encontrar la solución.")
 
-graficar_mastermind(historial_mejores, codigoObjetivo)
+graficarMastermind(historialMejores, codigoObjetivo, exito=encontrado)
