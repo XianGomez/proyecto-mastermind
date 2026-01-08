@@ -40,31 +40,6 @@ Xian Gomez - [Xian](https://github.com/XianGomez)
 Somos alumnos de Desarrollo de Aplicaciones Multiplataforma en el IES de Teis.  
 Este proyecto se ha realizado como una muestra de nuestro aprendizaje de dos meses y medio de python, markdown y git.
 
-
-# Manual
-
-## Instalación
-
-
-### Entorno Virtual - Windows
-
-1. El primer paso es descargar el proyecto.  
-
-    - Crear la carpeta en la que vamos a añadir todos los códigos de nuestro proyecto.
-
-2. Abrimos una terminal y en ella escribiremos lo siguiente:  
-    - **``py -m venv venv``** con esto se ha creado un entorno virtual llamado **``venv``**.  
-
-    <img src="images/venv.png" alt="Comando para crear entorno virtual llamado venv" width="500px" height="350px"><br>
-
-3. Ahora toca activar el entorno virtual y para ello hacemos lo siguiente:
-    - En la terminal escribimos lo siguiente **``cmd``**.
-    - Luego se escribirá **``.\venv\Scripts\activate.bat``**.  
-
-    <img src="images/3.entornos.png" alt="Comando para activar el entorno virtual"><br>
-
-La razón por la que se crea un entorno virtual es para que al instalar Reflex solo se haga en este entorno y no en todo nuestro equipo.
-
 # Metodología
 El tipo de metodología usado en este proyecto ha sido una mezcla de desarrollo en ***Espiral*** y ***Prototipado***.  
 Hemos empezado desarrollando el proyecto con el modelo en ***Espiral***. Este método lo hemos usado para realizar todas las historias de usuario hasta llegar a un prototipo.
