@@ -145,13 +145,13 @@ La duración del proyecto ha sido de unas tres semanas. En las cuales los primer
 # Uso de la IA
 
 1. ¿Qué herramienta de IA generativa usaste (nombre y versión)?
-    - La herramienta de IA generativa usamos fue ChatGPT 4-o o Copilot
+    - La herramienta de IA generativa usamos fue ChatGPT 4-o o Copilot.
 2. ¿Qué tipos de prompts proporcionaste?
     - Cuando nos encontrabamos con un bug que no eramos capaces de resolver, se le pedía ayuda para entender cual era el problema.
 3. ¿Para qué usaste la herramienta?
-    - Para explicación de documentación
-    -Añadir los casos test
-    - Bugs incapaces de dar solución después de horas de intento
+    - Para explicación de documentación.
+    -Añadir los casos test.
+    - Bugs incapaces de dar solución después de horas de intento.
 4. ¿Cómo has utilizado o cambiado la salida de la IA generativa?
     - En los demás casos las soluciones que nos podia ofrecer ChatGPT no eran validas a nuestro proyecto, pero nos daba pistas por donde podemos tirar y nos daba ejemplos.
 
@@ -163,7 +163,7 @@ En este proyecto hemos puesto en práctica los conocimientos adquiridos durante 
 
 - Añadir una opción en la que juegue el usuario y que el código secreto lo seleccionara la máquina.
 
-- Mejorar visualmente
+- Mejorar visualmente.
 
 ## Dificultades
 
