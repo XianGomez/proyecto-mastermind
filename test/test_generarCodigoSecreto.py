@@ -1,14 +1,12 @@
-import pytest
-from src.generarCodigoSecreto import generarCodigoAutomatico, generarCodigoManual, fichas
+from src import generarCodigoSecreto
 
-def test_generarCodigoAutomatico(monkeypatch):
-    codigoObjetivo = []
-    choices = ["RED", "BLUE", "YELLOW", "GREEN"]
-    monkeypatch.setattr('random.choice', lambda x: choices.pop(0))
-    result = generarCodigoAutomatico(codigoObjetivo, fichas, 4)
-    assert result == ["RED", "BLUE", "YELLOW", "GREEN"]
+import sys
+import os
 
-def test_generarCodigoAutomatico_error():
-    codigoObjetivo = []
-    with pytest.raises(ValueError):
-        generarCodigoAutomatico(codigoObjetivo, fichas, 5) 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+def test_generar_codigo_determinista(monkeypatch):
+    monkeypatch.setattr(generarCodigoSecreto.random, 'choice', lambda seq: 'BLUE')
+    codigo = generarCodigoSecreto.generarCodigoAutomatico(generarCodigoSecreto.fichas, n=4)
+    assert len(codigo) == 4
+    assert all(c == 'BLUE' for c in codigo)

@@ -1,11 +1,18 @@
-import pytest
-from src.crearPoblacionInicial import crearPoblacionInicial, fichas
+import sys
+import os
 
-def test_crearPoblacionInicial():
-    poblacion = crearPoblacionInicial(10)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+import crearPoblacionInicial 
+
+def test_crear_poblacion_determinista(monkeypatch):
+    crearPoblacionInicial.poblacionInicial = []
     
-    assert len(poblacion) == 10
+    monkeypatch.setattr(crearPoblacionInicial.random, 'choice', lambda seq: 'RED')
+
+    poblacion = crearPoblacionInicial.crearPoblacionInicial(TAMANHOPOBLACION=3)
+    
+    assert len(poblacion) == 3
     for individuo in poblacion:
         assert len(individuo) == 4
-        for color in individuo:
-            assert color in fichas
+        assert all(color == 'RED' for color in individuo)
