@@ -20,7 +20,6 @@
     - [**Backend**](#backend)
     - [**Frontend**](#frontend)
 - [**Pruebas**](#pruebas)
-    - [**Coverage**](#coverage)
     - [**Test de unidad**](#test-de-unidad)
     - [**Test de integración**](#test-de-integridad)
 - [**Análisis del tiempo invertido**](#análisis-del-tiempo-invertido)
@@ -41,10 +40,8 @@ Somos alumnos de Desarrollo de Aplicaciones Multiplataforma en el IES de Teis.
 Este proyecto se ha realizado como una muestra de nuestro aprendizaje de dos meses y medio de python, markdown y git.
 
 # Metodología
-El tipo de metodología usado en este proyecto ha sido una mezcla de desarrollo en ***Espiral*** y ***Prototipado***.  
+El tipo de metodología usado en este proyecto ha sido una mezcla de desarrollo en ***Espiral***.
 Hemos empezado desarrollando el proyecto con el modelo en ***Espiral***. Este método lo hemos usado para realizar todas las historias de usuario hasta llegar a un prototipo.
-
-El resto del desarrollo al tener un prototipo hemos estado usando la metodología  ***Prototipado*** que vamos creando distintas versiones del prototipo hasta llegar a la versión final.
 
 Por último, hemos usado ***Scrum*** como marco de trabajo durante todo el proyecto.
 
