@@ -15,4 +15,4 @@ def test_graficar_no_errores(monkeypatch):
     codigo = ['RED', 'BLUE', 'GREEN', 'PURPLE']
 
     # Debe ejecutarse sin lanzar excepciones
-    vis.graficar_mastermind(historial, codigo)
+    vis.graficarMastermind(historial, codigo)
