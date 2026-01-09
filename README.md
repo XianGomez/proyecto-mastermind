@@ -85,14 +85,13 @@ Los módulos usados para backend en nuestro proyecto son:
 
 ## Frontend
 
-Los módulos usados para frontend en nuestro proyecto son:
+El módulo usado para frontend en nuestro proyecto es:
 - Vista
-    - Estilos
 
 # Pruebas
 ## Test de unidad
 
-Es una técnica de prueba de software que nos permite comprobar funciones o métodos de manera individual, en nuestro caso tenemos 9 test de unidad:
+Es una técnica de prueba de software que nos permite comprobar funciones o métodos de manera individual, en nuestro caso tenemos 7 test de unidad:
 ![Imagen de test de unidad](images/pytest.jpeg)
 
 ## Test de integridad
@@ -113,7 +112,7 @@ No se ha implementado ningún test de integración
 
 ## Justificación temporal
 
-La duración del proyecto ha sido de unas tres semanas. En las cuales los primeros días se utilizo para la comprensión del proyecto en si, además de estudiar como organizar el proyecto.  
+La duración del proyecto ha sido de unas tres semanas. En las cuales los primeros días se utilizo para la comprensión del proyecto en si, además de estudiar como organizar el proyecto, después de entenderlo empezamos a llevarlo a cabo y los últimos días los usamos para hacer la documentación.  
 
 # Uso de la IA
 
