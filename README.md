@@ -7,8 +7,6 @@
 <div style="font-size: 20px;">
 
 - [**Introducción**](#introducción)
-- [**Manual**](#manual)
-    - [**Instalación**](#instalación)
 - [**Metodología**](#metodología)
 - [**Descripción técnica**](#descripción-técnica)
     - [**Historias de usuario**](#historias-de-usuario)
