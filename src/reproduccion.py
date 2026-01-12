@@ -2,9 +2,9 @@ import random
 from generarCodigoSecreto import fichas
 
 def mutacion(individuo, tasaMutacion):
-    for i in range(len(individuo)):
-        if random.random() < tasaMutacion:
-            individuo[i] = random.choice(fichas)
+    i = random.randint(0,3)
+    if random.random() < tasaMutacion:
+        individuo[i] = random.choice(fichas)
     return individuo
 
 
